@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Scroll Marker",
+  "version": "1.0",
+  "description": "Automatically remembers and restores scroll positions on websites",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "default_title": "Auto Scroll Marker"
+  }
+}
